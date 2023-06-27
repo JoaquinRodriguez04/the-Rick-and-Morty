@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rick and Morty</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+  
+    <header>
+        <nav class="nav-wrapper">
+            <img src="imagenes/logo-nav.png" class="logo" alt="">
+
+            <i class="bi bi-list list"></i>
+
+            <ul class="list-items-links-mobile">
+                <i class="bi bi-x close"></i>
+                <li class="item-link" id="characters-mobile">characters</li>
+                <li class="item-link" id="locations-mobile">locations</li>
+                <!-- <li class="item-link">episodes</li> -->
+            </ul>
+
+            <div class="disabled-desktop">
+                <ul class="list-items-links-desktop">
+                    <li class="item-link" id="characters-desktop">characters</li>
+                    <li class="item-link" id="locations-desktop">locations</li>
+                    <!-- <li class="item-link">episodes</li> -->
+                </ul>
+            </div>
+        </nav>    
+    </header>
+
+    <main>
+        
+        <div class="hero">
+            <h2 class="title-hero">The Rick and Morty API</h2>
+        </div>
+    </main>
+
+    <section>        
+        <div class="sections-targets-01">
+            <div class="targets-characters">
+                <!-- los personajes son agregados desde el js -->
+            </div>
+            <div class="btn-next">
+                <i class="bi bi-arrow-left-circle-fill arrow left"></i>
+                <i class="bi bi-arrow-right-circle-fill arrow next"></i>
+            </div>
+            <h2 class="number-pages"><span class="number-span">1</span> - 42</h2>
+        </div>
+
+        <div class="sections-targets-02 disabled">
+            <div class="targets-locations">
+                <!-- las localizaciones son agregadas desde el js -->
+            </div>
+            <div class="btn-next">
+                <i class="bi bi-arrow-left-circle-fill arrow left-2"></i>
+                <i class="bi bi-arrow-right-circle-fill arrow next-2"></i>
+            </div>
+            <h2 class="number-pages"><span class="number-span-2">1</span> - 7</h2>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
