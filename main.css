@@ -1,0 +1,578 @@
+/* importando la fuente de familia */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;500&family=Roboto:wght@400;500;700;900&family=Rubik:wght@300;400;500&display=swap');
+
+/* creando las variables */
+:root{
+    /* colores generales */
+    --clr-black: #181a21;
+    --clr-black-hover: #3f4350;
+    --clr-black000: #000;
+    --clr-black-gray: #232327;
+    --clr-gray: #a1a1a170;
+    --clr-white: #f0f0e9;
+    --clr-cyan: #edfcf3;
+    --clr-tarjets: #3c3e44;
+    --clr-green: #5aee61;
+    --clr-orange:#eea22f;
+    --clr-rgb: rgba(0,0,0,0.3);
+    --clr-rgb-2: rgba(0,0,0,0.5);
+
+    /* typos de dimensiones */
+    --type-Planet: #5aee61;
+    --type-Cluster: #453557;
+    --type-Space: #38096a;
+    --type-TV: #05b8df;
+    --type-Resort: #bb88ff;
+    /* --type-dimension: #1f4383; */
+    --type-Fantasy: #ff4d7a;
+    --type-Dream: #6683fd;
+    --type-unknown :#7c7578;
+    --type-Menagerie :#db5991;
+    --type-game: #0066ff;
+    --type-Customs: #5185df;
+    --type-Daycare: #9eece9;
+    --type-Dwarf: #a0ff82;
+    --type-Microverse: #ffa5ff;
+    --type-Miniverse: #ff6919;
+    --type-Teenyverse: #7da1fb;
+    --type-Spacecraft: #a190ff;
+    --type-Artificially: #8a2eaa;
+    --type-Mount: #4e1d03;
+    --type-Liquid: #e3f2f6;
+    --type-Convention: #9ebae9;
+    --type-Woods: #947400;    
+    --type-Diegesis: #ffaac8;
+    --type-Nightmare: #003bae;
+    --type-Asteroid: #005c75;
+    --type-Acid: #59e189;
+    --type-Merged: #7457bc;
+    --type-Death: #b40043;
+    --type-Base: #f4d196;
+    --type-Elemental: #b2e877;
+    --type-Hell: #ffef5c;
+    --type-Country: #089cff;
+    --type-Consciousness: #0814bf;
+    --type-Box: #d4dfed;
+    --type-Spa: #6c2594;
+    --type-Arcade: #4e407b;
+    --type-Machine: #f585f8;
+    --type-Reality: #0580ec;
+    --type-Quadrant: #3b11ad;
+    --type-Quasar: #bdcfa4;
+    --type-Human: #ffbfab;  
+    --type-Police: #7795e7;
+    --type-Dimension: #11143f;  
+    --type-Memory: #4e407b;
+}
+
+
+/* seteando estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color:var(--clr-black-gray);
+}
+
+li{
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+li:hover{
+   color: var(--clr-black-hover);
+}
+
+.list,.close{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.list{
+    display: none;
+}
+
+.list:hover{
+    color: var(--clr-black-hover);
+}
+
+.close:hover{
+    color: var(--clr-black-hover);
+}
+
+
+/* clases de las dimensiones */
+.Planet{
+    background-color: var(--type-Planet);
+}
+
+.Cluster{
+    background-color: var(--type-Cluster);
+}
+
+.Space{
+    background-color: var(--type-Space);
+}
+
+.TV{
+    background-color: var(--type-TV);
+}
+
+.Resort{
+    background-color: var(--type-Resort);
+}
+
+.Fantasy {
+    background-color: var(--type-Fantasy);
+}
+
+.Dream{
+    background-color: var(--type-Dream);
+}
+
+.unknown{
+    background-color: var(--type-unknown);
+}
+
+.Menagerie{
+    background-color: var(--type-Menagerie);
+}
+
+.Game{
+    background-color: var(--type-game);
+}
+
+.Customs{
+    background-color: var(--type-Customs);
+}
+
+.Daycare{
+    background-color: var(--type-Daycare);
+}
+
+.Dwarf{
+    background-color: var(--type-Dwarf);
+}
+
+.Miniverse{
+    background-color: var(--type-Miniverse);
+}
+
+.Microverse{
+    background-color: var(--type-Microverse);
+}
+
+.Teenyverse{
+    background-color: var(--type-Teenyverse);
+}
+
+.Spacecraft{
+    background-color: var(--type-Spacecraft);
+}
+
+.Teenyverse{
+    background-color: var(--type-Teenyverse);
+}
+
+.Artificially{
+    background-color: var(--type-Artificially);
+}
+
+.Mount{
+    background-color: var(--type-Mount);
+}
+
+.Liquid{
+    background-color: var(--type-Liquid);
+}
+
+.Convention{
+    background-color: var(--type-Convention);
+}
+
+.Woods{
+    background-color: var(--type-Woods);
+}
+
+.Diegesis{
+    background-color: var(--type-Diegesis);
+}
+
+.Nightmare{
+    background-color: var(--type-Nightmare);
+}
+
+.Asteroid{
+    background-color: var(--type-Asteroid);
+}
+
+.Acid{
+    background-color: var(--type-Acid);
+}
+
+.Merged{
+    background-color: var(--type-Merged);
+}
+
+.Death{
+    background-color: var(--type-Death);
+}
+
+.Base{
+    background-color: var(--type-Base);
+}
+
+.Elemental{
+    background-color: var(--type-Elemental);
+}
+
+.Hell{
+    background-color: var(--type-Hell);
+}
+
+.Country{
+    background-color: var(--type-Country);
+}
+
+.Consciousness{
+    background-color: var(--type-Consciousness);
+}
+
+.Box{
+    background-color: var(--type-Box);
+}
+
+.Spa{
+    background-color: var(--type-Spa);
+}
+
+.Arcade{
+    background-color: var(--type-Arcade);
+}
+
+.Machine{
+    background-color: var(--type-Machine);
+}
+
+.Reality{
+    background-color: var(--type-Reality);
+}
+
+.Quadrant{
+    background-color: var(--type-Quadrant);
+}
+
+.Quasar{
+    background-color: var(--type-Quasar);
+}
+
+.Human{
+    background-color: var(--type-Human);
+}
+
+.Police{
+    background-color: var(--type-Police);
+}
+
+.Dimension{
+    background-color: var(--type-Dimension);
+}
+
+.Memory{
+    background-color: var(--type-Memory);
+}
+
+/* comenzando a estilizar etiquetas */
+.nav-wrapper{
+    background-color: var( --clr-white);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 2.5em;
+}
+
+.list-items-links-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    background-color: var(--clr-white);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 30%;
+    padding: 1.5em 3em;
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: transform, 300ms ease;
+    box-shadow: 0 0 0 500vmax rgba(0,0,0,0.5);
+}
+
+
+.list-items-links-mobile.activate{
+    transform: translateX(-0%);
+    visibility: visible;
+    opacity: 1;
+}
+
+.list-items-links-desktop{
+    display: flex;
+    gap: .8em;
+}
+
+main{
+    background-image: url(imagenes/header-img-PhotoRoom.png-PhotoRoom.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--clr-white);
+    background-blend-mode: darken;
+    height: 50vh;
+    border-bottom: 1px solid var(--clr-gray);
+}
+
+.hero{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 2em;
+}
+
+.title-hero{
+    color: var(--clr-black-gray);
+    font-size: 4em;
+    text-align: center;
+}
+
+
+/* sections-targets-02 => */
+
+.sections-targets-01{
+    padding: 2em;
+}
+
+
+/* targets-characters => estilizando el contenedor de las tarjetas de personajes */
+
+.targets-characters{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
+}
+
+/* character => estilizando las tarjetas de los personajes */
+
+.character{
+    background-color: var(--clr-tarjets);
+    border-radius: 1em;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+
+.img-character{
+    width: 15em;
+}
+
+.info-character{
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 1;
+    row-gap: .4em;
+}
+
+.name-character{
+    color: var(--clr-white);
+}
+
+.title-character{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--clr-white);
+}
+
+.paragraph-character{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: var(--clr-orange);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.circle-color{
+    padding: .4em;
+    border-radius: 100vmax;
+    animation: color-animated 5s infinite;
+}
+
+.des-paragraph{
+    font-weight: 500;
+}
+
+/* sections-targets-02 => */
+
+.sections-targets-02{
+    padding: 2em;
+}
+
+/* targets-locations => estilizando el contenedor de las tarjetas de las 
+localizaciones */
+
+.targets-locations{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.2em;
+}
+
+/* locations => estilizando las tarjetas de las localizacones */
+
+.locations{
+    display: flex;
+    align-items: center;
+    gap: .9em;
+    background-color: var(--clr-tarjets);
+    padding: 1em 1em;
+    border-radius: 2em;
+}
+
+.id-location{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.h2-locations{
+    color: var(--clr-white);
+    text-align: center;
+}
+
+.type-location{
+    padding: .4em;
+    border-radius: 100vh;
+}
+
+
+.btn-next{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    margin: 1em 0 .1em;
+}
+
+.arrow{
+    font-size: 2.2em;
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.number-pages{
+    text-align: center;
+    color: var(--clr-white);
+    font-size: 1.1em;
+}
+
+.disabled{
+    display: none;
+}
+
+@keyframes color-animated {
+    0%{
+        background-color: #00fd9e;
+    }
+
+    25%{
+        background-color: #e3fc54;
+    }
+
+    50%{
+        background-color: #6cc2fd;
+    }
+
+    75%{
+        background-color: #0037c5;
+    }
+
+    85%{
+        background-color: #7f77f5;
+    }
+
+    100%{
+        background-color: #00fd9e;
+    }
+}
+
+/* media queries */
+@media screen and (min-width:1100px) {
+    .list-items-links{
+        width: 15%;
+    }
+
+    .title-hero{
+        font-size: 6em;
+    }
+
+}
+
+@media screen and (max-width: 1750px) {
+    .targets-locations{
+        grid-template-columns: repeat(2,1fr);   
+    }
+}
+
+@media screen and (max-width:1550px) {
+    .targets-characters{
+        grid-template-columns: repeat(2,1fr);  
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .targets-characters{
+        grid-template-columns: repeat(1,1fr);  
+    }  
+}
+
+@media screen and (max-width:768px) {
+    .list{
+        display: block;
+    }
+
+    .disabled-desktop{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:550px) { 
+    .list-items-links{
+        width: 100%;
+    } 
+
+    .character{
+       flex-direction: column;
+    } 
+    
+    .img-character{
+        width: 100%;
+    }
+
+}
